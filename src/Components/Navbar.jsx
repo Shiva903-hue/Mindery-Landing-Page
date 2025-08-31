@@ -27,7 +27,7 @@ function Navbar({ onStartTrial }) {
             {quickLinks.map((item, index) => {
               return (
                 <a
-                  key={item}
+                  key={index}
                   href={item.href}
                   className="text-purple-700 hover:text-green-600 font-bold transition-all duration-300 relative group opacity-0 animate-fade-in cursor-pointer transform hover:scale-105"
                   style={{ animationDelay: `${200 + index * 100}ms` }}
@@ -81,7 +81,7 @@ function Navbar({ onStartTrial }) {
           {quickLinks.map((item, index) => {
             return (
               <a
-                key={item}
+                key={index}
                 href={item.href}
                 className={`block text-gray-700 font-bold hover:text-green-600 transition-all duration-300 transform hover:translate-x-2 hover:scale-105 cursor-pointer ${
                   isOpen ? 'animate-slide-in-left' : ''
