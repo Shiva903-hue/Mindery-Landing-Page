@@ -27,7 +27,7 @@ const features = [
 
 function WhyMindery() {
   return (
-    <section className="bg-gray-50 py-20 overflow-hidden">
+    <section id="whyMindery" className="bg-gray-50 py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 opacity-0 animate-fade-in-up">

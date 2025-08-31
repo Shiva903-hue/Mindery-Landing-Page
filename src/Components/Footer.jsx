@@ -4,15 +4,15 @@ import React from "react";
 function Footer() {
   const quickLinks = [
     { name: "About", href: "#" },
-    { name: "Programs", href: "#programs" },
-    { name: "Pricing", href: "#pricing" },
+    { name: "Programs", href: "#Programs" },
+    { name: "Pricing", href: "#Pricing" },
     { name: "Contact", href: "#" }
   ];
 
   const contactInfo = [
     { icon: "📧", text: "support@mindery.com", type: "email" },
-    { icon: "📞", text: "+1 (555) 123-4567", type: "phone" },
-    { icon: "📍", text: "123 Learning St, NY", type: "address" }
+    { icon: "📞", text: "9999999999", type: "phone" },
+    { icon: "📍", text: "Bhnadara, Nagpur", type: "address" }
   ];
 
   const socialLinks = [

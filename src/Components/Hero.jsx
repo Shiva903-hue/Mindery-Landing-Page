@@ -10,7 +10,7 @@ function Hero({ onStartTrial, onOpenForm }) {
     { item1: "Empathy", item2: "Builds", emoji: "❤️" },
   ];
   return (
-    <section id="parentTeacherHub" className="relative bg-white pt-20 pb-16">
+    <section id="Hero" className="relative bg-white pt-20 pb-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="animate-fade-in-up">

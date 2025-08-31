@@ -29,7 +29,7 @@ function Testimonials() {
   ];
 
   return (
-    <section className="bg-white py-20 overflow-hidden">
+    <section id="Testimonials" className="bg-white py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         {/* Heading */}
         <div className="animate-fade-in-up">

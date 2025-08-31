@@ -3,6 +3,13 @@ import { Menu, X } from "lucide-react"; // icons for mobile menu
 
 function Navbar({ onStartTrial }) {
   const [isOpen, setIsOpen] = useState(false);
+  
+  const quickLinks = [
+    { name: "Why", href: "#whyMindery" },
+    { name: "Programs", href: "#Programs" },
+    { name: "Pricing", href: "#Pricing" },
+    { name: "Review", href: "#Testimonials" }
+  ];
 
   return (
     <nav className="w-full fixed top-0 left-0 bg-white shadow-md z-50 animate-slide-down">
@@ -17,11 +24,11 @@ function Navbar({ onStartTrial }) {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {["Why", "Program", "Pricing", "Reviews", "FAQ"].map((item, index) => {
+            {quickLinks.map((item, index) => {
               return (
                 <a
                   key={item}
-                  href="#parentTeacherHub"
+                  href={item.href}
                   className="text-purple-700 hover:text-green-600 font-bold transition-all duration-300 relative group opacity-0 animate-fade-in cursor-pointer transform hover:scale-105"
                   style={{ animationDelay: `${200 + index * 100}ms` }}
                 >
@@ -71,11 +78,11 @@ function Navbar({ onStartTrial }) {
         isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
       }`}>
         <div className="px-4 py-4 space-y-4">
-          {["Why", "Program", "Pricing", "Reviews", "FAQ"].map((item, index) => {
+          {quickLinks.map((item, index) => {
             return (
               <a
                 key={item}
-                href="#why"
+                href={item.href}
                 className={`block text-gray-700 font-bold hover:text-green-600 transition-all duration-300 transform hover:translate-x-2 hover:scale-105 cursor-pointer ${
                   isOpen ? 'animate-slide-in-left' : ''
                 }`}
