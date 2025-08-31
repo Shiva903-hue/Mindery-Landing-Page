@@ -12,7 +12,7 @@ function Footer() {
   const contactInfo = [
     { icon: "📧", text: "support@mindery.com", type: "email" },
     { icon: "📞", text: "9999999999", type: "phone" },
-    { icon: "📍", text: "Bhnadara, Nagpur", type: "address" }
+    { icon: "📍", text: "Bhandara, Nagpur", type: "address" }
   ];
 
   const socialLinks = [
