@@ -32,7 +32,7 @@ function Navbar({ onStartTrial }) {
                   className="text-purple-700 hover:text-green-600 font-bold transition-all duration-300 relative group opacity-0 animate-fade-in cursor-pointer transform hover:scale-105"
                   style={{ animationDelay: `${200 + index * 100}ms` }}
                 >
-                  {item}
+                  {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
                 </a>
               );
@@ -88,7 +88,7 @@ function Navbar({ onStartTrial }) {
                 }`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                {item}
+                {item.name}
               </a>
             );
           })}
