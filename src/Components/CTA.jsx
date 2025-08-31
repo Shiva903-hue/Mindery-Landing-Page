@@ -1,33 +1,3 @@
-// import React from "react";
-
-
-// function CTA({ onStartTrial, onOpenForm }) {
-//   const open = onStartTrial || onOpenForm || (() => {});
-//   return (
-//     <section className="bg-purple-700 py-20">
-//       <div className="max-w-5xl mx-auto px-6 text-center text-white">
-//         <h2 className="text-3xl sm:text-4xl font-bold">
-//           Ready to Help Your Child Thrive?
-//         </h2>
-//         <p className="mt-4 text-lg text-purple-100">
-//           Start your free trial today and unlock mindfulness tools built
-//           for kids, parents, and teachers.
-//         </p>
-//        <button
-//   onClick={onOpenForm}
-//   className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium text-white"
-// >
-//   Start Free Trial
-// </button>
-
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default CTA;
-
-
 import React from "react";
 
 function CTA({ onStartTrial, onOpenForm }) {
