@@ -67,59 +67,7 @@ function WhyMindery() {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes slide-down {
-          from {
-            transform: translateY(-20px);
-            opacity: 0;
-          }
-          to {
-            transform: translateY(0);
-            opacity: 1;
-          }
-        }
-
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-10px);
-          }
-        }
-
-        .animate-slide-down {
-          animation: slide-down 0.6s ease-out;
-        }
-
-        .animate-fade-in-up {
-          animation: fade-in-up 0.8s ease-out forwards;
-        }
-
-        .animate-float {
-          animation: float 3s ease-in-out infinite;
-        }
-
-        .delay-200 {
-          animation-delay: 200ms;
-        }
-
-        /* Hover animation for continuous floating effect */
-        .group:hover .animate-float {
-          animation-duration: 2s;
-        }
-      `}</style>
+     
     </section>
   );
 }

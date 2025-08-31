@@ -21,7 +21,7 @@ function Navbar({ onStartTrial }) {
               return (
                 <a
                   key={item}
-                  href="#why"
+                  href="#parentTeacherHub"
                   className="text-purple-700 hover:text-green-600 font-bold transition-all duration-300 relative group opacity-0 animate-fade-in cursor-pointer transform hover:scale-105"
                   style={{ animationDelay: `${200 + index * 100}ms` }}
                 >
@@ -97,70 +97,7 @@ function Navbar({ onStartTrial }) {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes slide-down {
-          from {
-            transform: translateY(-100%);
-          }
-          to {
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes slide-in-left {
-          from {
-            opacity: 0;
-            transform: translateX(-20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-
-        .animate-slide-down {
-          animation: slide-down 0.6s ease-out;
-        }
-
-        .animate-fade-in {
-          animation: fade-in 0.6s ease-out forwards;
-        }
-
-        .animate-slide-in-left {
-          animation: slide-in-left 0.4s ease-out forwards;
-        }
-
-        .delay-100 {
-          animation-delay: 100ms;
-        }
-
-        .delay-200 {
-          animation-delay: 200ms;
-        }
-
-        .delay-300 {
-          animation-delay: 300ms;
-        }
-
-        .delay-500 {
-          animation-delay: 500ms;
-        }
-
-        .delay-700 {
-          animation-delay: 700ms;
-        }
-      `}</style>
+    
     </nav>
   );
 }

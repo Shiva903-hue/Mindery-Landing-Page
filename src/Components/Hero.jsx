@@ -10,7 +10,7 @@ function Hero({ onStartTrial, onOpenForm }) {
     { item1: "Empathy", item2: "Builds", emoji: "❤️" },
   ];
   return (
-    <section className="relative bg-white pt-20 pb-16">
+    <section id="parentTeacherHub" className="relative bg-white pt-20 pb-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="animate-fade-in-up">
@@ -81,57 +81,7 @@ function Hero({ onStartTrial, onOpenForm }) {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-fade-in {
-          animation: fade-in 0.6s ease-out forwards;
-        }
-
-        .animate-fade-in-up {
-          animation: fade-in-up 0.8s ease-out forwards;
-        }
-
-        .delay-100 {
-          animation-delay: 100ms;
-        }
-
-        .delay-200 {
-          animation-delay: 200ms;
-        }
-
-        .delay-300 {
-          animation-delay: 300ms;
-        }
-
-        .delay-500 {
-          animation-delay: 500ms;
-        }
-
-        .delay-700 {
-          animation-delay: 700ms;
-        }
-      `}</style>
+   
     </section>
   );
 }
