@@ -1,9 +1,8 @@
-import React from 'react'
-import { BrowserRouter , Routes , Route } from 'react-router-dom'
-import Firms from './Component/Firms'
-import Account from './Component/Account'
-import Dashboard from './Component/Dashboard'
-import DailyTransiction from './Component/DailyTransiction'
+import React from 'react';
+import { BrowserRouter , Routes , Route } from 'react-router-dom';
+import Dashboard from './Component/Dashboard';
+import Reports from './Component/Reports';
+import PendingApprovle from './Component/PendingApprovle';
 
 export default function App() {
   return (
@@ -11,9 +10,9 @@ export default function App() {
       <BrowserRouter>
       <Dashboard/>
       <Routes>
-        <Route path='/' element={<DailyTransiction/>} />
-        <Route path='/Firms' element={<Firms/>} />
-        <Route path='/Account' element={<Account/>} />
+        <Route path='/' element={<Reports/>} />
+        <Route path='/PendingApprovle' element={<PendingApprovle/>} />
+        
       </Routes>
       </BrowserRouter>
     </div>
